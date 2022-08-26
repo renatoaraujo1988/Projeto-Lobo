@@ -27,21 +27,14 @@ header {
   height: 100vh;
 }
 
-.NavHeader {
-  display: grid;
-  grid-template-columns: 1fr auto;
-}
-
-.Logo {
-  align-self: center;
-  grid-row-end: span 3;
+main {
+  max-width: 1000px;
 }
 
 .UlFlags {
   display: grid;
   grid-template-columns: 1fr auto;
   justify-items: right;
-  grid-column: -1;
   gap: 20px;
   margin: 20px 0;
   max-width: 1000px;
@@ -52,10 +45,250 @@ header {
   border-radius: 25%;
 }
 
-.UlLinks {
-  grid-column: -1;
+.NavHeader {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  align-items: center;
+  justify-items: right;
 }
 
-main {
+.Link {
+  color: lightgray;
+}
+
+.Logo {
+  align-self: center;
+  justify-self: left;
+}
+
+.UlLinks a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: rgba(13, 41, 13, 0.647);
+  border: 1px solid gray;
+  border-radius: 10px;
+}
+
+.SectionIntroduction {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+  position: relative;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.ImgProfile {
+  max-width: 100%;
+  display: block;
+}
+
+.H1Title {
+  font-size: 4rem;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.ImgDetail {
+  position: absolute;
+  left: 350px;
+  z-index: -1;
+}
+
+/* Estilos do Conteúdo Principal  */
+
+.SectionExperience {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  gap: 20px;
+  background-color: lightgray;
+  height: 100vh;
+  align-content: center;
+}
+
+.H2Experience {
+  font-size: 4rem;
+  word-break: break-all;
+  align-self: center;
+  color: rgba(179, 179, 179, 0.631);
+  padding-left: 10px;
+}
+
+.DivResume p {
+  font-size: 2rem;
+  margin: 20px auto;
+}
+
+.DivExperience1,
+.DivExperience2 {
+  display: grid;
+  grid-template-columns: auto 1fr 1fr;
+  margin: 15px;
+  gap: 15px;
+  position: relative;
+}
+
+.DivDates1 p,
+.DivDates2 p,
+.DivExperience1 h3,
+.DivExperience2 h3 {
+  font-size: 1.5rem;
+}
+
+.BorderGreen {
+  border-left: 8px solid greenyellow;
+  padding-left: 5px;
+}
+
+.PaddingLeft {
+  padding-left: 13px;
+}
+
+.DivSpans span {
+  background-color: greenyellow;
+  border: 1px solid green;
+  border-radius: 10px;
+  display: inline-block;
+  margin: 10px auto;
+}
+
+.DivBikraftProject,
+.DivJob1,
+.DivJob2,
+.DivSurfbotProject {
+  padding-left: 15px;
+  background-color: gray;
+}
+
+.DivJob1,
+.DivJob2 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.H3Job2 {
+  width: 100%;
+}
+
+.SectionFormation {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  gap: 20px;
+  background-color: rgb(39, 37, 37);
+  height: 100vh;
+  align-content: center;
+  margin: 20px auto;
+  align-items: center;
+}
+
+.SectionFormation * {
+  color: white;
+}
+
+.DivAcademicHistory {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  margin: 20px auto;
+  align-items: center;
+}
+
+.DivComplementary,
+.DivLanguage {
+  margin: 20px auto;
+}
+
+.DivAcademicHistory h3 {
+  border-left: 8px solid greenyellow;
+  padding: 10px;
+  margin: 20px auto;
+}
+
+.PAcademic {
+  padding-left: 20px;
+}
+
+.DivBachelor,
+.DivTecnol,
+.DivMaster {
+  background-color: black;
+  height: 100%;
+  padding-top: 10px;
+}
+
+.DivBachelor,
+.DivTecnol,
+.DivMaster * {
+  padding-left: 20px;
+}
+
+.ImgCourses {
+  display: inline;
+}
+
+.H2Formation {
+  font-size: 4rem;
+  word-break: break-all;
+  align-self: center;
+  color: black;
+  padding-left: 10px;
+}
+
+.DivCourses {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 20px;
+  margin: 20px auto;
+}
+
+.DivCoursesList {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  padding-right: 20px;
+}
+
+.DivEnglish {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 20px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+/* FOOTER  */
+
+.Footer {
+  background-color: black;
   max-width: 1000px;
+  height: 100%;
+  display: grid;
+  align-content: center;
+}
+
+.SectionFooter {
+  position: relative;
+}
+
+.ImgFooter {
+  position: absolute;
+  top: -75px;
+}
+
+.DivFooter {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 60px;
+}
+
+.DivFooter * {
+  color: lightgray;
+}
+
+.PFooter {
+  font-size: 1.5rem;
+}
+
+.DivContacts * {
+  font-size: 2rem;
+  padding-left: 40px;
 }
