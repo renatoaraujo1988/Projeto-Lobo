@@ -404,8 +404,7 @@ main {
 
   .DivComplementary,
   .DivCoursesList,
-  .DivEnglish,
-  .H3English {
+  .DivEnglish {
     margin: auto 10px;
   }
 }
