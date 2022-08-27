@@ -91,7 +91,7 @@ main {
 
 .ImgDetail {
   position: absolute;
-  left: 350px;
+  left: 35%;
   z-index: -1;
 }
 
@@ -291,4 +291,121 @@ main {
 .DivContacts * {
   font-size: 2rem;
   padding-left: 40px;
+}
+
+/* MEDIAS  */
+
+@media (max-width: 840px) {
+  .DivResume p {
+    font-size: 1.2rem;
+  }
+
+  .NavHeader * {
+    margin: 5px auto;
+  }
+
+  .H1Title {
+    font-size: 2rem;
+  }
+
+  .ImgDetail {
+    left: 35%;
+  }
+
+  header {
+    height: 100%;
+  }
+}
+
+@media (max-width: 750px) {
+  .SectionExperience {
+    height: 100%;
+  }
+}
+
+@media (max-width: 690px) {
+  .H2Experience,
+  .H2Formation {
+    font-size: 2rem;
+  }
+  .DivDates1 p,
+  .DivDates2 p,
+  .DivExperience1 h3,
+  .DivExperience2 h3 {
+    font-size: 1rem;
+  }
+
+  .DivContacts *,
+  .PFooter {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 590px) {
+  .NavHeader,
+  .SectionIntroduction,
+  .SectionExperience,
+  .SectionFormation {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    margin: auto;
+    gap: 10px;
+  }
+
+  .H1Title,
+  .PCity,
+  .PAcademic {
+    text-align: center;
+    margin: 10px;
+  }
+
+  .DivResume {
+    padding: 10px;
+    text-align: center;
+  }
+
+  .ImgProfile {
+    width: 200px;
+  }
+  .UlLinks,
+  .ImgFooter,
+  .ImgDetail {
+    visibility: hidden;
+  }
+}
+
+@media (max-width: 490px) {
+  .DivExperience1,
+  .DivExperience2 {
+    grid-template-columns: auto 1fr;
+  }
+
+  .DivJob1,
+  .DivBikraftProject,
+  .DivSurfbotProject,
+  .DivJob2 {
+    grid-column: -1;
+  }
+
+  .SectionFormation {
+    height: 100%;
+  }
+
+  .DivAcademicHistory {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .DivBachelor,
+  .DivTecnol,
+  .DivMaster {
+    width: 90%;
+  }
+
+  .DivComplementary,
+  .DivCoursesList,
+  .DivEnglish,
+  .H3English {
+    margin: auto 10px;
+  }
 }
